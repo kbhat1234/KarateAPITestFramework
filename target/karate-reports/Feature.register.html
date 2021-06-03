@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-06-03 06:45:08 pm</div>
+    <div>2021-06-03 09:22:10 pm</div>
   </div>        
 </div>
 
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>393</span>
+              <span>ms:</span>&nbsp;<span>905</span>
             </div>
           </div>
           <div class="step-row">
@@ -147,7 +147,7 @@
         <span>When</span>&nbsp;<span>request {&quot;email&quot;: &quot;eve.holt@reqres.in&quot;, &quot;password&quot;: &quot;pistol&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -175,7 +175,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">384</div>
+    <div class="time-cell passed">884</div>
   </div>
 
    
@@ -184,7 +184,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.9">18:45:07.484 request:
+  <div class="preformatted" data-parent="0.9">21:22:07.950 request:
 1 &gt; POST https://reqres.in/api/register
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 50
@@ -194,9 +194,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;password&quot;:&quot;pistol&quot;,&quot;email&quot;:&quot;eve.holt@reqres.in&quot;}
 
-18:45:07.860 response time in milliseconds: 376
+21:22:08.824 response time in milliseconds: 873
 1 &lt; 200
-1 &lt; Date: Thu, 03 Jun 2021 13:15:07 GMT
+1 &lt; Date: Thu, 03 Jun 2021 15:52:08 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 36
 1 &lt; Connection: keep-alive
@@ -205,12 +205,12 @@
 1 &lt; Etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0a739c782600000de9563a6000000001
+1 &lt; cf-request-id: 0a742c3a6000004b0547b75000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=im76mPB8F2gb1JCOMOAvEpPr%2FabPjhk3u%2BECLNEV9kGbEHxBBRG377HQlv%2FrBBs8Ou7bj%2FQO3UdwrPdQjPYrlAJgbTei2qzvi%2FmwpH2wE5PuCPuwqzvM&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=z2PGTj84PDH%2BuC6jUjr133%2BSvYZlmBlkG59lxcDP0NAXuBponL%2BoSYquFjiOVBNOzOmk%2FL0aEia2upCD34AnAxvJTcycPZVWqzvYHbBmtor%2BawHMMCqH&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 65993039dc2a0de9-BOM
+1 &lt; CF-RAY: 659a163d6c3d4b05-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;id&quot;:4,&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;}
 </div>   
@@ -269,7 +269,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.11">18:45:07.861 [print] {
+  <div class="preformatted" data-parent="0.11">21:22:08.827 [print] {
   &quot;id&quot;: 4,
   &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
@@ -293,7 +293,7 @@
         <span>And</span>&nbsp;<span>assert response.id != null</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -349,7 +349,7 @@
         <span>And</span>&nbsp;<span>match response.token == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -377,7 +377,7 @@
         <span>And</span>&nbsp;<span>match response.token != &#39;#number&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -406,7 +406,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>705</span>
+              <span>ms:</span>&nbsp;<span>708</span>
             </div>
           </div>
           <div class="step-row">
@@ -513,7 +513,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">702</div>
+    <div class="time-cell passed">704</div>
   </div>
 
    
@@ -522,7 +522,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.20">18:45:07.877 request:
+  <div class="preformatted" data-parent="0.20">21:22:08.863 request:
 1 &gt; POST https://reqres.in/api/register
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 30
@@ -532,9 +532,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;eve.holt@reqres.in&quot;}
 
-18:45:08.575 response time in milliseconds: 698
+21:22:09.559 response time in milliseconds: 696
 1 &lt; 400
-1 &lt; Date: Thu, 03 Jun 2021 13:15:08 GMT
+1 &lt; Date: Thu, 03 Jun 2021 15:52:09 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 28
 1 &lt; Connection: keep-alive
@@ -543,12 +543,12 @@
 1 &lt; Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0a739c7ae800000ec06995f000000001
+1 &lt; cf-request-id: 0a742c3d6700004b0abd054000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=pwjmecfoTs%2FRPCGaZ1ru7OOtIEppOfzaVvAEsbl2eyHHVTqfTN4eRKpt6AUS17j%2F6UiqwcwJXL87D0iVBgxbHHr0i0bSSAmx5vHCYHKCLOjCY6HjWQUu&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=IysxLrclWy4prVoffSn8S0OIkCbWI6yxIObmLBSfWEdEeUsPyLsGW1A4HXV164JvOdCuut1E95qOugTl0APoUZxzgdME8hgyAlAKuNPX%2BJnqgRLH7awz&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 6599303e4f150ec0-BOM
+1 &lt; CF-RAY: 659a16423d104b0a-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;error&quot;:&quot;Missing password&quot;}
 </div>   
@@ -607,7 +607,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.22">18:45:08.578 [print] {
+  <div class="preformatted" data-parent="0.22">21:22:09.563 [print] {
   &quot;error&quot;: &quot;Missing password&quot;
 }
  
@@ -630,7 +630,7 @@
         <span>And</span>&nbsp;<span>match $.error == &#39;Missing password&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -687,7 +687,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>401</span>
+              <span>ms:</span>&nbsp;<span>787</span>
             </div>
           </div>
           <div class="step-row">
@@ -710,7 +710,7 @@
         <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -738,7 +738,7 @@
         <span>Given</span>&nbsp;<span>path &#39;/register&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -766,7 +766,7 @@
         <span>When</span>&nbsp;<span>request {&quot;password&quot;: &quot;eve.holt@reqres.in&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -794,7 +794,7 @@
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">394</div>
+    <div class="time-cell passed">776</div>
   </div>
 
    
@@ -803,7 +803,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.29">18:45:08.601 request:
+  <div class="preformatted" data-parent="0.29">21:22:09.596 request:
 1 &gt; POST https://reqres.in/api/register
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 33
@@ -813,9 +813,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;password&quot;:&quot;eve.holt@reqres.in&quot;}
 
-18:45:08.989 response time in milliseconds: 387
+21:22:10.359 response time in milliseconds: 763
 1 &lt; 400
-1 &lt; Date: Thu, 03 Jun 2021 13:15:08 GMT
+1 &lt; Date: Thu, 03 Jun 2021 15:52:10 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 37
 1 &lt; Connection: keep-alive
@@ -824,12 +824,12 @@
 1 &lt; Etag: W/&quot;25-Ik70kof1lbc973ShN5FoVPxYn7A&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; cf-request-id: 0a739c7c8b00000f1c1a9e7000000001
+1 &lt; cf-request-id: 0a742c40ff00004aff3311c000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=QFcVf3BXnVBxyFxQAeKfx97mjV9PKLj%2BiTEqwZEoaWfFqDpKqEOOZPPP4r4EYaV%2BBFMBvU4IkoQXrNKq600uQUApCbfjEuftTt%2FQVB8y1xakO4j8pzTu&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=%2FBzm4uRSpxOzz%2F5q9hX88OnmrAeCMYS6QjX7HYTMk2OSXXhEmhSshQflO5Nfn3MWlgIVfo19LQ7DqvnvqL7%2Bgxvj8q96VvBW3JtL2DNeQqCjgO3IB5Zc&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 65993040d8500f1c-BOM
+1 &lt; CF-RAY: 659a1647fb334aff-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;error&quot;:&quot;Missing email or username&quot;}
 </div>   
@@ -851,7 +851,7 @@
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -888,7 +888,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.31">18:45:08.993 [print] {
+  <div class="preformatted" data-parent="0.31">21:22:10.364 [print] {
   &quot;error&quot;: &quot;Missing email or username&quot;
 }
  
@@ -939,7 +939,7 @@
         <span>And</span>&nbsp;<span>assert response.error == &#39;Missing email or username&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    

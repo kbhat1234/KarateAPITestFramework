@@ -12,7 +12,7 @@ Feature: Example 1
     Then status 200
     And assert response.data.id == 2
     And print response.data.id
-    And print response
+    And print 'response----',response
     And match response == {"data":{"id":'#number',"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
     And match $.data.id == '#number'
     And match $.data.first_name == '#string'
