@@ -6,7 +6,7 @@ Feature: Example 1
     #And def responseEg1 = read('eg1.json')
     * def responseEg1 = read('eg1.json')
     
-  Scenario: Test case 1 of example 1
+  Scenario: Test case 1 of example 2
     Given path '/users/2'
     When method get
     Then status 200
