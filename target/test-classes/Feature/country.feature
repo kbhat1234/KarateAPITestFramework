@@ -3,7 +3,7 @@ Feature: check returned countries by api
   Background: 
     * url 'https://restcountries.eu'
     * header Accept = 'application/json'
-    * def resp = read('response.json')
+    * def resp = read('../data/response.json')
 
   Scenario: get list of all countries
     Given path '/rest/v2/all'
