@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-06-03 09:22:03 pm</div>
+    <div>2021-06-03 11:08:14 pm</div>
   </div>        
 </div>
 
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>734</span>
+              <span>ms:</span>&nbsp;<span>440</span>
             </div>
           </div>
           <div class="step-row">
@@ -98,7 +98,7 @@
         <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -133,7 +133,7 @@
         <span>*</span>&nbsp;<span>def responseEg1 = read(&#39;../data/eg1.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -161,7 +161,7 @@
         <span>Given</span>&nbsp;<span>path &#39;/users/2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -189,7 +189,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">658</div>
+    <div class="time-cell passed">387</div>
   </div>
 
    
@@ -198,7 +198,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.11">21:22:02.404 request:
+  <div class="preformatted" data-parent="0.11">23:08:13.888 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
@@ -206,9 +206,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:22:03.049 response time in milliseconds: 644
+23:08:14.267 response time in milliseconds: 377
 1 &lt; 200
-1 &lt; Date: Thu, 03 Jun 2021 15:52:03 GMT
+1 &lt; Date: Thu, 03 Jun 2021 17:38:14 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -218,14 +218,14 @@
 1 &lt; Via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 4892
-1 &lt; cf-request-id: 0a742c259600004adbd186f000000001
+1 &lt; Age: 3844
+1 &lt; cf-request-id: 0a748d5d9b00004acf1eb8b000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=MezbLGCPrStmigNac2ZEZFPaMJzxxnXIn0UJSu3oFx9Qk2C%2BNL6ifd%2BjTFfBHQkNTXDeHeA5sxnZAKBIxzLf6tEr9X5PRbz1xzziuaRhuYmeE%2F7Ctpvz&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=qyIeyfkTpwgLF1Rbf6XT9L%2F6uGya9e%2Bv9JP5VP7cUQTkcnE4Q3BqIQGrbyauAC5juClI%2B7EOhbE%2B9YMPCXLq0z93gdiKwbl4Oq7Omj5Q9s7cNi0pGWxo&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 659a161c29f74adb-HYD
+1 &lt; CF-RAY: 659ab1a8fa894acf-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;data&quot;:{&quot;last_name&quot;:&quot;Weaver&quot;,&quot;id&quot;:2,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/2-image.jpg&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;},&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </div>   
@@ -275,7 +275,7 @@
         <span>And</span>&nbsp;<span>assert response.data.id == 2</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -303,7 +303,7 @@
         <span>And</span>&nbsp;<span>print response.data.id</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -312,7 +312,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.14">21:22:03.065 [print] 2 
+  <div class="preformatted" data-parent="0.14">23:08:14.284 [print] 2 
 </div>   
 
   
@@ -332,7 +332,7 @@
         <span>And</span>&nbsp;<span>print &#39;response----&#39;,response</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -341,7 +341,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.15">21:22:03.070 [print] response---- {
+  <div class="preformatted" data-parent="0.15">23:08:14.297 [print] response---- {
   &quot;data&quot;: {
     &quot;last_name&quot;: &quot;Weaver&quot;,
     &quot;id&quot;: 2,
@@ -458,7 +458,7 @@
         <span>And</span>&nbsp;<span>match $.data.support.url == &#39;#ignore&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -486,7 +486,7 @@
         <span>And</span>&nbsp;<span>print responseEg1</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -495,7 +495,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.20">21:22:03.088 [print] [
+  <div class="preformatted" data-parent="0.20">23:08:14.308 [print] [
   {
     &quot;data&quot;: {
       &quot;id&quot;: 1,
@@ -556,7 +556,7 @@
         <span>And</span>&nbsp;<span>match response.data.id == responseEg1[1].data.id</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -584,7 +584,7 @@
         <span>And</span>&nbsp;<span>match response == responseEg1[1]</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -640,7 +640,7 @@
         <span>And</span>&nbsp;<span>match job_code == null</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -669,7 +669,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>358</span>
+              <span>ms:</span>&nbsp;<span>249</span>
             </div>
           </div>
           <div class="step-row">
@@ -790,7 +790,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">348</div>
+    <div class="time-cell passed">236</div>
   </div>
 
    
@@ -799,7 +799,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.29">21:22:03.123 request:
+  <div class="preformatted" data-parent="0.29">23:08:14.341 request:
 1 &gt; GET https://reqres.in/api/users/1
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
@@ -807,9 +807,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:22:03.465 response time in milliseconds: 340
+23:08:14.568 response time in milliseconds: 227
 1 &lt; 200
-1 &lt; Date: Thu, 03 Jun 2021 15:52:03 GMT
+1 &lt; Date: Thu, 03 Jun 2021 17:38:14 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -819,14 +819,14 @@
 1 &lt; Via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 4899
-1 &lt; cf-request-id: 0a742c274a00004ad440a0c000000001
+1 &lt; Age: 3843
+1 &lt; cf-request-id: 0a748d5ec500004b16c699b000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=0OAzhm6EzWkLjSnzfloVK3h9hmt7qMd5DQiU2ybCDadbq6WxZZbPV5qSWzItyqqSMkSnixil825mlzzoz9QPuWYPigoIrxye31FL8vCZVqn4cXURoWJa&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=p66OnOsFddQm%2FsBrxVgCoNxUJ4Vkbq8qpLz0FpnyQc%2FacWpa3htb981R8Mm4OctAUg2EjYCAnpOUVfQN%2F63gP34gvpezc3GR5%2FON0CUxUzcBbSF9LFHN&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 659a161edb184ad4-HYD
+1 &lt; CF-RAY: 659ab1aadaa74b16-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;data&quot;:{&quot;last_name&quot;:&quot;Bluth&quot;,&quot;id&quot;:1,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/1-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.bluth@reqres.in&quot;},&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </div>   
@@ -913,7 +913,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.32">21:22:03.468 [print] 1 
+  <div class="preformatted" data-parent="0.32">23:08:14.576 [print] 1 
 </div>   
 
   
@@ -942,7 +942,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.33">21:22:03.469 [print] {
+  <div class="preformatted" data-parent="0.33">23:08:14.577 [print] {
   &quot;data&quot;: {
     &quot;last_name&quot;: &quot;Bluth&quot;,
     &quot;id&quot;: 1,
@@ -1059,7 +1059,7 @@
         <span>And</span>&nbsp;<span>print responseEg1</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1068,7 +1068,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.37">21:22:03.471 [print] [
+  <div class="preformatted" data-parent="0.37">23:08:14.581 [print] [
   {
     &quot;data&quot;: {
       &quot;id&quot;: 1,
@@ -1129,7 +1129,7 @@
         <span>And</span>&nbsp;<span>match response.data.id == responseEg1[0].data.id</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1157,7 +1157,7 @@
         <span>And</span>&nbsp;<span>match response == responseEg1[0]</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1242,7 +1242,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>315</span>
+              <span>ms:</span>&nbsp;<span>249</span>
             </div>
           </div>
           <div class="step-row">
@@ -1307,7 +1307,7 @@
         <span>*</span>&nbsp;<span>def responseEg1 = read(&#39;../data/eg1.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1363,7 +1363,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">295</div>
+    <div class="time-cell passed">233</div>
   </div>
 
    
@@ -1372,7 +1372,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.46">21:22:03.487 request:
+  <div class="preformatted" data-parent="0.46">23:08:14.604 request:
 1 &gt; GET https://reqres.in/api/users/3
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
@@ -1380,9 +1380,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-21:22:03.772 response time in milliseconds: 284
+23:08:14.829 response time in milliseconds: 223
 1 &lt; 200
-1 &lt; Date: Thu, 03 Jun 2021 15:52:04 GMT
+1 &lt; Date: Thu, 03 Jun 2021 17:38:15 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1392,14 +1392,14 @@
 1 &lt; Via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
 1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 6926
-1 &lt; cf-request-id: 0a742c28c100004ae022948000000001
+1 &lt; Age: 6014
+1 &lt; cf-request-id: 0a748d5fca00004aff738e3000000001
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=G7qjcctKzngofQTgL0NeZGZSnp6MCP%2FyNl%2Bt0vyvIEzGIL8OzsNJRmvY4qs5Ppz%2BeMKbzIJ2l6LzMAKs5FFR%2BfZwoL4ZnXruccKOcVuXeKzOvux2AX%2F5&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=vmLYDAahXM5ohYB16%2BGhC4OICk8EsldP7fiRbLBMADkImeR6EYMko1yCrKYCgbknujze0omCAdRlDLI1aj68kUames8t87wi%2BBYHqa3ID0DFufAASjFB&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 659a16213e4f4ae0-HYD
+1 &lt; CF-RAY: 659ab1ac7cbb4aff-HYD
 1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
 {&quot;data&quot;:{&quot;last_name&quot;:&quot;Wong&quot;,&quot;id&quot;:3,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/3-image.jpg&quot;,&quot;first_name&quot;:&quot;Emma&quot;,&quot;email&quot;:&quot;emma.wong@reqres.in&quot;},&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
 </div>   
@@ -1486,7 +1486,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.49">21:22:03.789 [print] 3 
+  <div class="preformatted" data-parent="0.49">23:08:14.837 [print] 3 
 </div>   
 
   
@@ -1515,7 +1515,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.50">21:22:03.790 [print] {
+  <div class="preformatted" data-parent="0.50">23:08:14.838 [print] {
   &quot;data&quot;: {
     &quot;last_name&quot;: &quot;Wong&quot;,
     &quot;id&quot;: 3,
@@ -1604,7 +1604,7 @@
         <span>And</span>&nbsp;<span>match $.data.support.url == &#39;#ignore&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1641,7 +1641,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.54">21:22:03.797 [print] [
+  <div class="preformatted" data-parent="0.54">23:08:14.843 [print] [
   {
     &quot;data&quot;: {
       &quot;id&quot;: 1,
@@ -1702,7 +1702,7 @@
         <span>And</span>&nbsp;<span>match response.data.id == responseEg1[2].data.id</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1730,7 +1730,7 @@
         <span>And</span>&nbsp;<span>match response == responseEg1[2]</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1758,7 +1758,7 @@
         <span>*</span>&nbsp;<span>def job_code = response.data.job_code</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
