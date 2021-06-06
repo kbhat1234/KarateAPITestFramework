@@ -5,7 +5,7 @@ Feature: Example 1
     * url 'https://reqres.in/api'
     #And def responseEg1 = read('../data/eg1.json')
     * def responseEg1 = read('../data/eg1.json')
-    
+
   Scenario: Test scenario 1
     Given path '/users/2'
     When method get
@@ -22,9 +22,8 @@ Feature: Example 1
     And match response == responseEg1[1]
     * def job_code = response.data.job_code
     And match job_code == null
-    
-    
-    Scenario: Test scenario 2
+
+  Scenario: Test scenario 2
     Given path '/users/1'
     When method get
     Then status 200
@@ -39,9 +38,8 @@ Feature: Example 1
     And match response == responseEg1[0]
     * def job_code = response.data.job_code
     And match job_code == null
-    
-    
-    Scenario: Test scenario 3
+
+  Scenario: Test scenario 3
     Given path '/users/3'
     When method get
     Then status 200
