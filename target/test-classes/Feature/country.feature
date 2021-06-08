@@ -16,14 +16,16 @@ Feature: check returned countries by api
     Then print responseHeaders
     Then print responseTime
     Then print responseType
-
   #Then print responseTimeStamp
+  
   Scenario: Search by country name by - native name
     Given path '/rest/v2/name/eesti'
     When method get
     Then status 200
     Then print response
     And match response == resp
+    
+    #And match response.population == 1315944
 
   Scenario: Search by country name by - partial name
     Given path '/rest/v2/name/united'
