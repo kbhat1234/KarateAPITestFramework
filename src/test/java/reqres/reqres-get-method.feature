@@ -7,6 +7,8 @@ Feature: This is a get call used to get list of users
     * def expectedResponsePage = read('../data/listUsersResponsePage.json')
     * def expectedUserOneResponse = read('../data/user1Response.json')
     * def expectedUserTwoResponse = read('../data/user2Response.json')
+    * def expectedListResource = read('../data/listResource.json')
+    * def expectedSingleUserResource = read('../data/singleUserResource.json')
 
   Scenario: Test case1: get list of users
     Given path '/users'
@@ -84,3 +86,36 @@ Feature: This is a get call used to get list of users
    And print 'Response is ', response
    Then match $.support.url == 'https://reqres.in/#support-heading'
    Then print 'Support url is ', response.support.url
+   
+   
+   Scenario: Test case8: get user details using list resource
+   Given path '/unknown'
+   When method GET
+   Then status 200
+   And print 'Response is ', response
+   Then match response == expectedListResource
+   Then print 'expectedListResource is ', expectedListResource
+   Then match response.data[3].name == expectedListResource.data[3].name
+   Then print 'Actual Response is ', response.data[3].name
+   Then print 'Expected response is ', expectedListResource.data[3].name
+   
+   
+   Scenario: Test case9: get single user details using list resource
+   Given path '/unknown/2'
+   When method GET
+   Then status 200
+   And print 'Response is ', response
+   Then match response == expectedSingleUserResource
+   Then print 'expectedSingleUserResource is ', expectedSingleUserResource
+   Then match response.data.color == expectedSingleUserResource.data.color
+   Then print 'Actual Response is ', response.data.color
+   Then print 'Expected response is ', expectedSingleUserResource.data.color
+   Then match response.data.color == '#string'
+   
+   
+   Scenario: Test case10: get single user details not found using list resource
+   Given path '/unknown/23'
+   When method GET
+   Then status 404
+   And print 'Response is ', response
+   Then match response == {}
